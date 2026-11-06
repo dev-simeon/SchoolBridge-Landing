@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>SchoolBridge — School management platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/aos.css" rel="stylesheet" />
+    <link href="css2.css?v=20261104-platform-breakpoint" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="public-landing">
+      <header class="public-header">
+        <div class="public-header-inner">
+          <a class="brand-lockup" href="#hero" aria-label="SchoolBridge home">
+            <span
+              class="brand-mark material-symbols-outlined"
+              aria-hidden="true"
+              >school</span
+            >
+            <span>SchoolBridge <small>SCHOOL MANAGEMENT</small></span>
+          </a>
+          <nav class="public-nav" aria-label="Main navigation">
+            <a href="#platform" aria-current="location">Platform</a>
+            <a href="#features">Features</a>
+            <a href="#getting-started">How it works</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="public-header-actions">
+            <a class="signin-link" href="https://localhost:7261/login"
+              >Sign in</a
+            >
+
+            <a
+              class="button button-primary button-small"
+              href="https://localhost:7261/register-school"
+              >Register your school
+              <span class="material-symbols-outlined">arrow_forward</span></a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section" id="hero">
+          <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+          <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1>
+                One school day.<br /><span>Every classroom connected.</span>
+              </h1>
+              <p class="hero-description">
+                Student and teacher companion apps alongside a school admin
+                portal — bringing learning, classroom and gate attendance, and
+                daily school operations into one platform.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="button button-primary"
+                  href="https://localhost:7261/register-school"
+                  >Register your school
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+                <a class="button button-quiet" href="#platform"
+                  >Explore the platform
+                  <span class="material-symbols-outlined">south</span></a
+                >
+              </div>
+              <div class="hero-note">
+                <span class="material-symbols-outlined">verified_user</span>
+                Tools for students, teachers and school administrators
+              </div>
+            </div>
+
+            <div
+              class="hero-visual"
+              role="img"
+              aria-label="Illustration of the school web portal, desktop app and mobile companion app"
+            >
+              <div class="hero-visual-glow" aria-hidden="true"></div>
+              <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+              <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+              <div class="hero-browser-preview">
+                <div class="hero-browser-bar">
+                  <span class="hero-window-dots"><i></i><i></i><i></i></span
+                  ><span class="hero-address"
+                    ><span class="material-symbols-outlined">lock</span>
+                    school-portal/admin</span
+                  ><span class="material-symbols-outlined hero-refresh"
+                    >refresh</span
+                  >
+                </div>
+                <div class="hero-browser-screen">
+                  <img
+                    class="hero-dashboard-image"
+                    src="assets/schoolbridge-admin-portal-preview.svg"
+                    alt="SchoolBridge admin dashboard"
+                  />
+                </div>
+              </div>
+              <div class="hero-desktop-preview">
+                <div class="hero-desktop-bar">
+                  <span class="hero-window-dots"><i></i><i></i></span
+                  ><span>Desktop app · Student &amp; Teacher</span
+                  ><span class="material-symbols-outlined">remove</span>
+                </div>
+                <div class="hero-desktop-screen">
+                  <div>
+                    <span class="material-symbols-outlined">fullscreen</span
+                    ><small>WEEKLY TIMETABLE</small>
+                  </div>
+                  <strong>Companion desktop app</strong>
+                  <footer>
+                    <span>Subjects · Topics · Lesson content</span><i></i>
+                  </footer>
+                </div>
+              </div>
+              <div class="hero-phone-preview">
+                <div class="hero-phone-notch"><i></i></div>
+                <div class="hero-phone-screen">
+                  <div class="hero-phone-status">
+                    <span class="material-symbols-outlined"
+                      >signal_cellular_alt</span
+                    ><small>08:15</small>
+                  </div>
+                  <div class="hero-phone-card">
+                    <span class="material-symbols-outlined"
+                      >qr_code_scanner</span
+                    ><strong>Companion app</strong
+                    ><small>Student &amp; Teacher</small>
+                  </div>
+                  <div class="hero-phone-footer">
+                    <i></i> Gate &amp; classroom attendance
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="scroll-cue"
+            href="#platform"
+            aria-label="Scroll to platform details"
+            ><span></span><small>Scroll to explore</small></a
+          >
+        </section>
+
+        <section class="platform-section" id="platform">
+          <div class="section-shell">
+            <div class="section-heading centered-heading">
+              <span class="eyebrow eyebrow-muted">THREE TAILORED SURFACES</span>
+              <h2>One school platform, with a place for every role.</h2>
+              <p>
+                Students, teachers and school administrators each get tools that
+                fit the work they do.
+              </p>
+            </div>
+            <div class="surface-role-grid">
+              <article class="surface-role-card">
+                <div class="surface-role-top">
+                  <span class="surface-role-icon material-symbols-outlined"
+                    >menu_book</span
+                  ><span class="surface-role-label">MOBILE &amp; DESKTOP</span>
+                </div>
+                <h3>Student Companion</h3>
+                <p>
+                  Give students a clear place to access learning information
+                  shared by their school.
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Subjects and weekly topics
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Lesson content and timetable
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Mobile and desktop access
+                  </li>
+                </ul>
+              </article>
+              <article class="surface-role-card surface-role-featured">
+                <div class="surface-role-top">
+                  <span class="surface-role-icon material-symbols-outlined"
+                    >co_present</span
+                  ><span class="surface-role-label">MOBILE &amp; DESKTOP</span>
+                </div>
+                <h3>Teacher Companion</h3>
+                <p>
+                  Keep class information and everyday attendance tools close at
+                  hand.
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Class and subject information
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Class attendance tools
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Gate attendance access
+                  </li>
+                </ul>
+              </article>
+              <article class="surface-role-card">
+                <div class="surface-role-top">
+                  <span class="surface-role-icon material-symbols-outlined"
+                    >dashboard</span
+                  ><span class="surface-role-label">ADMIN WEB PORTAL</span>
+                </div>
+                <h3>School Portal</h3>
+                <p>
+                  Give administrators one place to manage school setup, records
+                  and operations.
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Academic setup and results
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Student and staff records
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check_circle</span
+                    >Attendance and school operations
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <p class="platform-footnote">
+              <span class="material-symbols-outlined">download</span> School
+              administrators can download the mobile and Windows companion apps
+              from App Versions in the portal.
+            </p>
+          </div>
+        </section>
+
+        <section class="feature-section" id="features">
+          <div class="section-shell">
+            <div class="feature-heading">
+              <span class="eyebrow eyebrow-muted">PRODUCT WALKTHROUGH</span>
+              <h2>Engineered for academic precision.</h2>
+              <p>
+                Clear tools for learning, school records, attendance and
+                everyday school operations.
+              </p>
+            </div>
+            <div class="feature-showcases">
+              <article class="feature-showcase-row">
+                <div class="feature-showcase-copy">
+                  <div class="feature-kicker">
+                    <span class="feature-number" aria-label="Feature 1"
+                      >01</span
+                    >
+                    <div class="feature-role-badge">
+                      <span class="material-symbols-outlined">school</span
+                      ><span>For Students</span>
+                    </div>
+                  </div>
+                  <h3>Structured access to current-term learning.</h3>
+                  <p>
+                    Students can use the companion app to find their
+                    current-term subjects, weekly topics and lesson content
+                    shared by the school.
+                  </p>
+                  <div class="feature-points">
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined">menu_book</span>
+                      <div>
+                        <h4>Subjects and weekly topics</h4>
+                        <p>
+                          See learning topics organised for the current term.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined">description</span>
+                      <div>
+                        <h4>Lesson content</h4>
+                        <p>
+                          Open lesson materials made available by the school.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="feature-showcase-visual"
+                  aria-label="Illustrative student companion app placeholder"
+                >
+                  <div class="feature-frame">
+                    <div class="feature-frame-bar">
+                      <div class="feature-frame-controls"><i></i><i></i></div>
+                      <span>Student companion · Preview</span
+                      ><strong>TERM LEARNING</strong>
+                    </div>
+                    <div class="feature-frame-canvas aspect-16-10">
+                      <span
+                        class="frame-crop crop-top-left material-symbols-outlined"
+                        >crop_free</span
+                      ><span
+                        class="frame-crop crop-top-right material-symbols-outlined"
+                        >crop_free</span
+                      >
+                      <div class="frame-placeholder">
+                        <span
+                          class="frame-placeholder-icon material-symbols-outlined"
+                          >auto_stories</span
+                        >
+                        <h4>Student app preview · 16:10</h4>
+                        <p>Subjects, weekly topics and lesson content</p>
+                      </div>
+                      <span
+                        class="frame-crop crop-bottom-left material-symbols-outlined"
+                        >crop_free</span
+                      ><span
+                        class="frame-crop crop-bottom-right material-symbols-outlined"
+                        >crop_free</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="feature-showcase-row feature-showcase-reverse">
+                <div
+                  class="feature-showcase-visual"
+                  aria-label="Three companion app screens for classroom attendance, student gate check-in, and staff gate check-in"
+                >
+                  <div class="feature-frame">
+                    <div class="feature-frame-bar">
+                      <div class="feature-frame-controls"><i></i><i></i></div>
+                      <span>Companion app · Attendance</span
+                      ><strong class="frame-status"
+                        ><i></i> CLASS + GATE</strong
+                      >
+                    </div>
+                    <div
+                      class="feature-frame-canvas feature-attendance-canvas aspect-16-10"
+                    >
+                      <img
+                        class="attendance-app-preview-image"
+                        src="assets/schoolbridge-attendance-app-preview.svg"
+                        alt="Companion app screens showing classroom roll-call, student gate check-ins, and staff gate check-ins"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-showcase-copy">
+                  <div class="feature-kicker">
+                    <span class="feature-number" aria-label="Feature 2"
+                      >02</span
+                    >
+                    <div class="feature-role-badge">
+                      <span class="material-symbols-outlined">how_to_reg</span
+                      ><span>For Teachers</span>
+                    </div>
+                  </div>
+                  <h3>Classroom roll-call and gate attendance.</h3>
+                  <p>
+                    Teachers can mark attendance for their assigned classes and
+                    use the companion app’s gate attendance tools.
+                  </p>
+                  <div class="feature-points">
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined">groups</span>
+                      <div>
+                        <h4>Classroom attendance</h4>
+                        <p>Record attendance for students in a class roster.</p>
+                      </div>
+                    </div>
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined"
+                        >qr_code_scanner</span
+                      >
+                      <div>
+                        <h4>Gate check-in and check-out</h4>
+                        <p>Use the app’s QR-based gate attendance flow.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="feature-showcase-row">
+                <div class="feature-showcase-copy">
+                  <div class="feature-kicker">
+                    <span class="feature-number" aria-label="Feature 3"
+                      >03</span
+                    >
+                    <div class="feature-role-badge">
+                      <span class="material-symbols-outlined">domain</span
+                      ><span>For Admins &amp; School Office</span>
+                    </div>
+                  </div>
+                  <h3>Central records for the school office.</h3>
+                  <p>
+                    Use the web portal to manage school records, academic setup,
+                    attendance and everyday administration.
+                  </p>
+                  <div class="feature-points">
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined">tune</span>
+                      <div>
+                        <h4>School and academic setup</h4>
+                        <p>
+                          Manage students, staff, classes, subjects and
+                          timetables.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-point">
+                      <span class="material-symbols-outlined"
+                        >event_available</span
+                      >
+                      <div>
+                        <h4>Attendance and events</h4>
+                        <p>Review attendance and organise school events.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="feature-showcase-visual"
+                  aria-label="SchoolBridge administrator portal preview"
+                >
+                  <div class="feature-frame">
+                    <div class="feature-frame-bar">
+                      <div class="feature-frame-controls"><i></i><i></i></div>
+                      <span>School portal · Dashboard</span
+                      ><strong>ADMIN WORKSPACE</strong>
+                    </div>
+                    <div
+                      class="feature-frame-canvas feature-admin-canvas aspect-16-10"
+                    >
+                      <img
+                        class="school-portal-preview-image"
+                        src="assets/schoolbridge-admin-portal-preview.svg"
+                        alt="School administration dashboard with student, subscription, subject and academic session summaries"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="school-day-section"
+          aria-labelledby="school-day-heading"
+        >
+          <div class="section-shell">
+            <div class="school-day-heading">
+              <div class="school-day-heading-copy">
+                <span class="eyebrow eyebrow-muted"
+                  >MADE FOR SCHOOL ROUTINES</span
+                >
+                <h2 id="school-day-heading">
+                  Built around the way a school day works.
+                </h2>
+              </div>
+              <p class="school-day-heading-description">
+                Schools have their own routines, from planning lessons to taking
+                attendance. SchoolBridge brings the tools for those jobs
+                together in one school management platform.
+              </p>
+            </div>
+            <div class="school-day-grid">
+              <article class="school-day-card">
+                <span class="school-day-icon material-symbols-outlined"
+                  >hub</span
+                >
+                <h3>Learning and attendance, together</h3>
+                <p>
+                  Keep academic planning, class information and attendance tools
+                  within the same school workspace.
+                </p>
+              </article>
+              <article class="school-day-card">
+                <span class="school-day-icon material-symbols-outlined"
+                  >devices</span
+                >
+                <h3>Web, mobile and desktop access</h3>
+                <p>
+                  Administrators use the web portal. Students and teachers can
+                  use the companion apps on mobile or Windows.
+                </p>
+              </article>
+              <article class="school-day-card">
+                <span class="school-day-icon material-symbols-outlined"
+                  >admin_panel_settings</span
+                >
+                <h3>Tools for each school role</h3>
+                <p>
+                  Student, teacher and administrator experiences focus on the
+                  information and tasks for each role.
+                </p>
+              </article>
+              <article class="school-day-card">
+                <span class="school-day-icon material-symbols-outlined"
+                  >event_available</span
+                >
+                <h3>Mark attendance at the gate and in class</h3>
+                <p>
+                  Use the companion app for student and staff gate
+                  check-in/check-out and classroom attendance. Administrators
+                  can review attendance records in the portal.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="workflow-section" id="getting-started">
+          <div class="section-shell">
+            <div class="section-heading centered-heading">
+              <span class="eyebrow eyebrow-muted">HOW IT WORKS</span>
+              <h2>Start with your school. Build from there.</h2>
+              <p>
+                Register, set up your school workspace, then use the tools that
+                fit your team.
+              </p>
+            </div>
+            <div class="workflow-track">
+              <article class="workflow-step">
+                <span class="workflow-index">01</span
+                ><span class="workflow-icon"
+                  ><span class="material-symbols-outlined"
+                    >app_registration</span
+                  ></span
+                >
+                <h3>Register your school</h3>
+                <p>Enter your school details and administrator information.</p>
+              </article>
+              <article class="workflow-step">
+                <span class="workflow-index">02</span
+                ><span class="workflow-icon"
+                  ><span class="material-symbols-outlined"
+                    >account_tree</span
+                  ></span
+                >
+                <h3>Set up your workspace</h3>
+                <p>
+                  Add the academic year, classes, subjects and school records.
+                </p>
+              </article>
+              <article class="workflow-step">
+                <span class="workflow-index">03</span
+                ><span class="workflow-icon"
+                  ><span class="material-symbols-outlined">devices</span></span
+                >
+                <h3>Use the platform</h3>
+                <p>
+                  Manage school work on the web and download companion apps from
+                  the portal.
+                </p>
+              </article>
+              <div class="workflow-line"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-section" id="pricing">
+          <div class="section-shell">
+            <div class="section-heading centered-heading">
+              <span class="eyebrow eyebrow-muted"
+                >PLANS FOR DIFFERENT SCHOOL SIZES</span
+              >
+              <h2>Choose a plan that fits your school.</h2>
+              <p>
+                Compare student limits and included features. Basic is free;
+                paid plan prices are per term.
+              </p>
+            </div>
+            <div class="pricing-cards">
+              <article class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="pricing-plan-icon material-symbols-outlined"
+                    >school</span
+                  ><span class="pricing-plan-name">Basic</span>
+                </div>
+                <p class="pricing-description">For small emerging schools.</p>
+                <div class="pricing-price">Free</div>
+                <p class="pricing-capacity">
+                  Up to <strong>150 students</strong>
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Standard
+                    reporting
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Email
+                    support
+                  </li>
+                </ul>
+                <a
+                  class="button button-quiet pricing-action"
+                  href="https://localhost:7261/register-school"
+                  >Get started
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+              </article>
+              <article class="pricing-card pricing-card-featured">
+                <span class="pricing-recommended">RECOMMENDED</span>
+                <div class="pricing-card-head">
+                  <span class="pricing-plan-icon material-symbols-outlined"
+                    >trending_up</span
+                  ><span class="pricing-plan-name">Pro</span>
+                </div>
+                <p class="pricing-description">For growing standard schools.</p>
+                <div class="pricing-price">₦300,000<span>/ term</span></div>
+                <p class="pricing-capacity">
+                  Up to <strong>300 students</strong>
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Advanced
+                    reporting and analytics
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Priority
+                    email and chat support
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Advanced
+                    access control
+                  </li>
+                </ul>
+                <a
+                  class="button button-primary pricing-action"
+                  href="https://localhost:7261/register-school"
+                  >Get started
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+              </article>
+              <article class="pricing-card">
+                <div class="pricing-card-head">
+                  <span class="pricing-plan-icon material-symbols-outlined"
+                    >domain</span
+                  ><span class="pricing-plan-name">Premium</span>
+                </div>
+                <p class="pricing-description">
+                  For large established schools.
+                </p>
+                <div class="pricing-price">₦700,000<span>/ term</span></div>
+                <p class="pricing-capacity">
+                  Up to <strong>600 students</strong>
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Advanced
+                    reporting and analytics
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Priority
+                    email and chat support
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Advanced
+                    access control
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Custom
+                    domains
+                  </li>
+                </ul>
+                <a
+                  class="button button-quiet pricing-action"
+                  href="https://localhost:7261/register-school"
+                  >Get started
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+              </article>
+              <article class="pricing-card pricing-card-enterprise">
+                <div class="pricing-card-head">
+                  <span class="pricing-plan-icon material-symbols-outlined"
+                    >apartment</span
+                  ><span class="pricing-plan-name">Enterprise</span>
+                </div>
+                <p class="pricing-description">
+                  For large and multi-campus schools.
+                </p>
+                <div class="pricing-price">₦1,000,000<span>/ term</span></div>
+                <p class="pricing-capacity">
+                  <strong>Unlimited students</strong>
+                </p>
+                <ul>
+                  <li>
+                    <span class="material-symbols-outlined">check</span
+                    >Multi-campus management
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span
+                    >Dedicated account manager
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Custom
+                    domains and white-labeling
+                  </li>
+                  <li>
+                    <span class="material-symbols-outlined">check</span>Custom
+                    API integrations
+                  </li>
+                </ul>
+                <a
+                  class="button button-quiet pricing-action"
+                  href="https://localhost:7261/register-school"
+                  >Get started
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+              </article>
+            </div>
+            <p class="pricing-note">
+              Prices and plan details match the options currently shown in the
+              portal. Pro, Premium and Enterprise are priced per term.
+            </p>
+          </div>
+        </section>
+
+        <section class="faq-section section-shell" id="faq">
+          <div class="faq-layout">
+            <div class="faq-intro">
+              <span class="eyebrow eyebrow-muted">GOOD TO KNOW</span>
+              <h2>Questions schools often ask.</h2>
+              <p>Clear answers about the portal, apps and school plans.</p>
+              <a class="text-link" href="https://localhost:7261/register-school"
+                >Register your school
+                <span class="material-symbols-outlined">arrow_forward</span></a
+              >
+            </div>
+            <div class="faq-list">
+              <details>
+                <summary>
+                  Which schools can use SchoolBridge?<span
+                    class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  SchoolBridge is designed for schools that want one place to
+                  manage school records, academics and daily operations. The
+                  plans offer different student limits, from 150 students on
+                  Basic to unlimited on Enterprise.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  What can I manage in the web portal?<span
+                    class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Manage student and staff records, parents and guardians,
+                  classes, subjects, lesson topics, results, attendance, events,
+                  timetables, subscriptions, fees and finance.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Are there mobile and desktop apps?<span
+                    class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Yes. The platform includes an Android mobile app and a Windows
+                  desktop app alongside the school admin web portal.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  Where do I download the apps?<span
+                    class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  After signing in, school administrators can find the companion
+                  apps in App Versions in the portal.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  How does pricing work?<span class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Basic is free. Pro, Premium and Enterprise are priced per
+                  term, with different student limits and plan features.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  How do I get started?<span class="material-symbols-outlined"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Register your school and administrator details, then use your
+                  school workspace to set up classes, subjects and records.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="closing-section" aria-labelledby="closing-heading">
+          <div class="closing-banner">
+            <svg
+              class="closing-rings"
+              aria-hidden="true"
+              fill="none"
+              viewBox="0 0 600 600"
+            >
+              <circle
+                cx="300"
+                cy="300"
+                r="280"
+                stroke="white"
+                stroke-dasharray="12 12"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="300"
+                cy="300"
+                r="200"
+                stroke="white"
+                stroke-width="1"
+              />
+              <circle
+                cx="300"
+                cy="300"
+                r="120"
+                stroke="white"
+                stroke-width="2"
+              />
+            </svg>
+            <div class="closing-glow" aria-hidden="true"></div>
+            <div class="closing-content">
+              <span class="closing-status"
+                ><i></i> READY FOR YOUR NEXT TERM</span
+              >
+              <h2 id="closing-heading">
+                Let’s make every school day easier to see.
+              </h2>
+              <p>
+                Connect classrooms, staff and school operations in one place.
+                Register your school to get started, or explore the plans
+                available for your team.
+              </p>
+              <div class="closing-actions">
+                <a
+                  class="closing-primary"
+                  href="https://localhost:7261/register-school"
+                  ><span>Register your school</span
+                  ><span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+                <a class="closing-secondary" href="#pricing">Explore plans</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="public-footer">
+        <div class="footer-main">
+          <a
+            class="brand-lockup footer-brand"
+            href="#hero"
+            aria-label="SchoolBridge home"
+            ><span
+              class="brand-mark material-symbols-outlined"
+              aria-hidden="true"
+              >school</span
+            ><span>SchoolBridge <small>SCHOOL MANAGEMENT</small></span></a
+          >
+          <p>School management tools for schools of different sizes.</p>
+          <nav aria-label="Footer navigation">
+            <a href="#platform">Platform</a><a href="#features">Features</a
+            ><a href="#getting-started">How it works</a
+            ><a href="#pricing">Pricing</a><a href="#faq">FAQ</a
+            ><a href="https://localhost:7261/register-school">Register school</a
+            ><a href="https://localhost:7261/login">Sign in</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 SchoolBridge. All rights reserved.</span
+          ><span>Web portal · Android · Windows</span>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const header = document.querySelector(".public-header");
+        if (!header) return;
+        const updateHeaderHeight = () => {
+          document.documentElement.style.setProperty(
+            "--landing-header-height",
+            `${header.getBoundingClientRect().height}px`,
+          );
+        };
+        updateHeaderHeight();
+        new ResizeObserver(updateHeaderHeight).observe(header);
+      })();
+    </script>
+    <script src="assets/aos.js"></script>
+    <script src="landing.js"></script>
+  </body>
+</html>

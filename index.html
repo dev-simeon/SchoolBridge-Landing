@@ -1,0 +1,1398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>SchoolBridge — School management platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="assets/aos.css" rel="stylesheet" />
+    <link
+      href="main.css?v=20261106-workflow-index-visible"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="public-landing container-fluid px-0">
+      <!-- Navigation -->
+      <header class="public-header sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+          <div class="container-xxl column-gap-4">
+            <a
+              class="navbar-brand d-flex align-items-center me-0"
+              href="#hero"
+              aria-label="SchoolBridge home"
+            >
+              <span
+                class="brand-mark d-inline-flex align-items-center justify-content-center rounded-3 bg-primary text-white shadow-sm"
+                aria-hidden="true"
+                ><span class="material-symbols-outlined">school</span></span
+              >
+              <span class="d-flex flex-column lh-sm">
+                <span class="fw-bold">SchoolBridge</span>
+                <small class="text-secondary text-uppercase fw-semibold"
+                  >School management</small
+                >
+              </span>
+            </a>
+
+            <nav
+              class="public-nav navbar-nav d-none d-lg-flex flex-row align-items-center ms-auto"
+              aria-label="Main navigation"
+            >
+              <a
+                class="nav-link active position-relative"
+                href="#hero"
+                aria-current="location"
+                >Home</a
+              >
+              <a class="nav-link position-relative" href="#platform"
+                >Platform</a
+              >
+              <a class="nav-link position-relative" href="#features"
+                >Features</a
+              >
+              <a class="nav-link position-relative" href="#getting-started"
+                >How it works</a
+              >
+              <a class="nav-link position-relative" href="#pricing">Pricing</a>
+              <a class="nav-link position-relative" href="#faq">FAQ</a>
+            </nav>
+
+            <div class="navbar-actions d-none d-lg-flex align-items-center">
+              <a
+                class="btn btn-link signin-link text-decoration-none px-0 fw-medium"
+                href="https://localhost:7261/login"
+                >Sign in</a
+              >
+              <a
+                class="btn btn-primary fw-semibold d-inline-flex align-items-center justify-content-center"
+                href="https://localhost:7261/register-school"
+                >Register your school
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+
+            <button
+              class="navbar-toggler d-lg-none d-grid align-items-center justify-content-center p-0 ms-auto"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobile-nav-drawer"
+              aria-controls="mobile-nav-drawer"
+              aria-label="Open navigation menu"
+            >
+              <span class="material-symbols-outlined fs-4" aria-hidden="true"
+                >menu</span
+              >
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        class="offcanvas offcanvas-end mobile-nav-drawer"
+        tabindex="-1"
+        id="mobile-nav-drawer"
+        aria-labelledby="mobile-nav-title"
+      >
+        <div class="offcanvas-header border-0">
+          <div>
+            <span
+              class="mobile-drawer-kicker small text-uppercase fw-semibold text-primary"
+              >SchoolBridge</span
+            >
+            <h2
+              class="mobile-drawer-title offcanvas-title fs-5 fw-semibold mt-2"
+              id="mobile-nav-title"
+            >
+              Explore
+            </h2>
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close navigation menu"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+          <nav
+            class="mobile-nav-links nav flex-column gap-2"
+            aria-label="Mobile navigation"
+          >
+            <a
+              class="nav-link active d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#hero"
+              aria-current="location"
+              data-bs-dismiss="offcanvas"
+              >Home</a
+            >
+            <a
+              class="nav-link d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#platform"
+              data-bs-dismiss="offcanvas"
+              >Platform</a
+            >
+            <a
+              class="nav-link d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#features"
+              data-bs-dismiss="offcanvas"
+              >Features</a
+            >
+            <a
+              class="nav-link d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#getting-started"
+              data-bs-dismiss="offcanvas"
+              >How it works</a
+            >
+            <a
+              class="nav-link d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#pricing"
+              data-bs-dismiss="offcanvas"
+              >Pricing</a
+            >
+            <a
+              class="nav-link d-flex align-items-center rounded-3 px-3 py-3 fs-6 fw-medium"
+              href="#faq"
+              data-bs-dismiss="offcanvas"
+              >FAQ</a
+            >
+          </nav>
+          <div class="mobile-drawer-actions mt-auto d-grid gap-2 border-top">
+            <a
+              class="mobile-drawer-signin btn btn-link signin-link d-flex align-items-center justify-content-center text-decoration-none py-2 fw-semibold"
+              href="https://localhost:7261/login"
+              >Sign in</a
+            >
+            <a
+              class="mobile-drawer-register btn btn-primary fw-semibold d-inline-flex align-items-center justify-content-center"
+              href="https://localhost:7261/register-school"
+              >Register your school
+              <span class="material-symbols-outlined" aria-hidden="true"
+                >arrow_forward</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+      <main class="container-fluid p-0">
+        <!-- Hero -->
+        <section
+          class="hero-section d-flex flex-column position-relative overflow-hidden isolation-isolate"
+          id="hero"
+        >
+          <div
+            class="container-xxl d-flex align-items-center flex-grow-1 position-relative"
+          >
+            <div
+              class="hero-grid row g-4 row-gap-4 row-gap-xl-0 align-items-center position-relative mx-auto w-100"
+            >
+              <div
+                class="hero-copy col-12 col-md-9 col-lg-8 col-xl-6 ps-0 py-0 z-2"
+              >
+                <h1 class="mw-100 fw-semibold">
+                  One platform for school administration
+                  <span>and everyday access.</span>
+                </h1>
+                <p class="hero-description m-0">
+                  Manage academic setup, student and staff records, timetables,
+                  and operations through the central admin web portal, supported
+                  by companion apps for Windows and Android.
+                </p>
+                <div
+                  class="hero-actions d-flex flex-wrap justify-content-start"
+                >
+                  <a
+                    class="button btn btn-primary button-primary d-inline-flex align-items-center justify-content-center fw-semibold"
+                    href="https://localhost:7261/register-school"
+                    >Register your school
+                    <span class="material-symbols-outlined fs-6"
+                      >arrow_forward</span
+                    ></a
+                  >
+                  <a
+                    class="button btn btn-outline-secondary button-quiet d-inline-flex align-items-center justify-content-center fw-semibold"
+                    href="#platform"
+                    >Explore the platform
+                    <span class="material-symbols-outlined">south</span></a
+                  >
+                </div>
+                <div
+                  class="hero-note d-flex align-items-center gap-2 fw-medium"
+                >
+                  <span class="material-symbols-outlined">verified_user</span>
+                  Tools for students, teachers and school administrators
+                </div>
+              </div>
+
+              <div
+                class="hero-visual col-12 col-xl-6 pe-0 d-flex align-items-center justify-content-center position-relative z-1"
+                role="img"
+                aria-label="Illustration of the school web portal, desktop app and mobile companion app"
+              >
+                <div class="hero-composition position-relative mx-auto">
+                  <div
+                    class="hero-orbit hero-orbit-one position-absolute z-n1 rounded-circle pe-none"
+                    aria-hidden="true"
+                  ></div>
+                  <div
+                    class="hero-orbit hero-orbit-two position-absolute z-n1 rounded-circle pe-none"
+                    aria-hidden="true"
+                  ></div>
+                  <div
+                    class="hero-browser-preview position-absolute end-0 overflow-hidden"
+                  >
+                    <div
+                      class="hero-browser-bar d-flex align-items-center justify-content-between"
+                    >
+                      <span
+                        class="hero-window-dots d-inline-flex align-items-center gap-1"
+                        ><i class="rounded-circle"></i
+                        ><i class="rounded-circle"></i
+                        ><i class="rounded-circle"></i></span
+                      ><span
+                        class="hero-address d-flex align-items-center overflow-hidden text-nowrap"
+                        ><span class="material-symbols-outlined">lock</span>
+                        school-portal/admin</span
+                      ><span class="material-symbols-outlined hero-refresh"
+                        >refresh</span
+                      >
+                    </div>
+                    <div class="hero-browser-screen overflow-hidden">
+                      <img
+                        class="hero-dashboard-image d-block w-100 h-100 object-fit-cover"
+                        src="assets/schoolbridge-admin-portal-preview.svg"
+                        alt="SchoolBridge admin dashboard"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="hero-desktop-preview position-absolute start-0 z-2 overflow-hidden"
+                  >
+                    <div
+                      class="hero-desktop-bar d-flex align-items-center justify-content-between"
+                    >
+                      <span
+                        class="hero-window-dots d-inline-flex align-items-center gap-1"
+                        ><i class="rounded-circle"></i
+                        ><i class="rounded-circle"></i></span
+                      ><span>Desktop app · Student &amp; Teacher</span
+                      ><span class="material-symbols-outlined">remove</span>
+                    </div>
+                    <div
+                      class="hero-desktop-screen d-flex flex-column justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <span class="material-symbols-outlined">fullscreen</span
+                        ><small>WEEKLY TIMETABLE</small>
+                      </div>
+                      <strong class="text-center">Companion desktop app</strong>
+                      <footer
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <span>Subjects · Topics · Lesson content</span
+                        ><i class="rounded-circle"></i>
+                      </footer>
+                    </div>
+                  </div>
+                  <div
+                    class="hero-phone-preview position-absolute end-0 bottom-0 z-3 overflow-hidden"
+                  >
+                    <div
+                      class="hero-phone-notch d-flex align-items-center justify-content-center"
+                    >
+                      <i></i>
+                    </div>
+                    <div
+                      class="hero-phone-screen d-flex flex-column justify-content-between text-center"
+                    >
+                      <div
+                        class="hero-phone-status d-flex align-items-center justify-content-between"
+                      >
+                        <span class="material-symbols-outlined"
+                          >signal_cellular_alt</span
+                        ><small>08:15</small>
+                      </div>
+                      <div
+                        class="hero-phone-card d-flex flex-column align-items-center rounded-3"
+                      >
+                        <span class="material-symbols-outlined"
+                          >qr_code_scanner</span
+                        ><strong class="mt-1">Companion app</strong
+                        ><small>Student &amp; Teacher</small>
+                      </div>
+                      <div
+                        class="hero-phone-footer d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <i class="rounded-circle"></i> Gate &amp; classroom
+                        attendance
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="scroll-cue d-flex align-items-center gap-2 position-absolute text-decoration-none"
+            href="#platform"
+            aria-label="Scroll to platform details"
+            ><span class="position-absolute"></span
+            ><small class="fw-medium">Scroll to explore</small></a
+          >
+        </section>
+
+        <!-- Platform -->
+        <section class="platform-section" id="platform">
+          <div class="container-xxl">
+            <div class="section-heading mx-auto text-center">
+              <span
+                class="eyebrow eyebrow-muted d-inline-flex align-items-center gap-2 fw-bold"
+                >THREE TAILORED SURFACES</span
+              >
+              <h2 class="fw-semibold">
+                One school platform, with a place for every role.
+              </h2>
+              <p class="m-0 mx-auto fs-6">
+                Students, teachers and school administrators each get tools that
+                fit the work they do.
+              </p>
+            </div>
+            <div class="surface-role-grid row g-3">
+              <article class="col-12 col-sm-9 col-lg-4 mx-auto">
+                <div class="surface-role-card h-100">
+                  <div
+                    class="surface-role-top d-flex align-items-center justify-content-between gap-2 mb-4"
+                  >
+                    <span
+                      class="surface-role-icon material-symbols-outlined d-flex align-items-center justify-content-center flex-shrink-0"
+                      >menu_book</span
+                    ><span
+                      class="surface-role-label rounded-pill fw-bold text-nowrap"
+                      >MOBILE &amp; DESKTOP</span
+                    >
+                  </div>
+                  <h3 class="mb-2 fw-semibold">Student Companion</h3>
+                  <p class="mb-3">
+                    Give students a clear place to access learning information
+                    shared by their school.
+                  </p>
+                  <ul class="d-grid gap-2 p-0 pt-3 mb-0 list-unstyled">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Subjects and weekly topics
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Lesson content and timetable
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Mobile and desktop access
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article class="col-12 col-sm-9 col-lg-4 mx-auto">
+                <div class="surface-role-card surface-role-featured h-100">
+                  <div
+                    class="surface-role-top d-flex align-items-center justify-content-between gap-2 mb-4"
+                  >
+                    <span
+                      class="surface-role-icon material-symbols-outlined d-flex align-items-center justify-content-center flex-shrink-0"
+                      >co_present</span
+                    ><span
+                      class="surface-role-label rounded-pill fw-bold text-nowrap"
+                      >MOBILE &amp; DESKTOP</span
+                    >
+                  </div>
+                  <h3 class="mb-2 fw-semibold">Teacher Companion</h3>
+                  <p class="mb-3">
+                    Keep class information and everyday attendance tools close
+                    at hand.
+                  </p>
+                  <ul class="d-grid gap-2 p-0 pt-3 mb-0 list-unstyled">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Class and subject information
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Class attendance tools
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Gate attendance access
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article class="col-12 col-sm-9 col-lg-4 mx-auto">
+                <div class="surface-role-card h-100">
+                  <div
+                    class="surface-role-top d-flex align-items-center justify-content-between gap-2 mb-4"
+                  >
+                    <span
+                      class="surface-role-icon material-symbols-outlined d-flex align-items-center justify-content-center flex-shrink-0"
+                      >dashboard</span
+                    ><span
+                      class="surface-role-label rounded-pill fw-bold text-nowrap"
+                      >ADMIN WEB PORTAL</span
+                    >
+                  </div>
+                  <h3 class="mb-2 fw-semibold">School Portal</h3>
+                  <p class="mb-3">
+                    Give administrators one place to manage school setup,
+                    records and operations.
+                  </p>
+                  <ul class="d-grid gap-2 p-0 pt-3 mb-0 list-unstyled">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Academic setup and results
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Student and staff records
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined flex-shrink-0"
+                        >check_circle</span
+                      >Attendance and school operations
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <p class="platform-footnote mt-5 text-center mb-0">
+              School administrators can download the mobile and Windows
+              companion apps from App Versions in the portal.
+            </p>
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="feature-section" id="features">
+          <div class="feature-inner container-xxl">
+            <div
+              class="section-heading centered-heading feature-walkthrough-heading mx-auto text-center"
+            >
+              <span class="eyebrow eyebrow-muted fw-bold"
+                >PRODUCT WALKTHROUGH</span
+              >
+              <h2 class="fw-semibold">Engineered for academic precision.</h2>
+              <p class="m-0 mx-auto fs-6">
+                Clear tools for learning, school records, attendance and
+                everyday school operations.
+              </p>
+            </div>
+
+            <div
+              class="feature-sticky-layout align-items-start"
+              data-feature-sync
+            >
+              <div
+                class="feature-story-column d-flex flex-column"
+                id="narrative-column"
+              >
+                <article
+                  id="step-01"
+                  class="feature-step"
+                  data-feature-step="admin"
+                >
+                  <p
+                    class="feature-step-label small fw-semibold text-uppercase text-primary mb-3"
+                  >
+                    01 · Admin &amp; office
+                  </p>
+                  <h3 class="feature-step-title fw-semibold">
+                    Central records for the school office.
+                  </h3>
+                  <p class="feature-step-description fs-6 mb-4">
+                    Use the web portal to manage school records, academic setup,
+                    attendance and everyday administration.
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >menu_book</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >School and academic setup</strong
+                        ><span class="small text-secondary"
+                          >Manage students, staff, classes, subjects and
+                          timetables.</span
+                        ></span
+                      >
+                    </li>
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >event</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >Attendance and events</strong
+                        ><span class="small text-secondary"
+                          >Review attendance and organise school events.</span
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </article>
+
+                <article
+                  id="step-02"
+                  class="feature-step"
+                  data-feature-step="teacher"
+                >
+                  <p
+                    class="feature-step-label small fw-semibold text-uppercase text-primary mb-3"
+                  >
+                    02 · Teacher platform
+                  </p>
+                  <h3 class="feature-step-title fw-semibold">
+                    Classroom roll-call and gate attendance.
+                  </h3>
+                  <p class="feature-step-description fs-6 mb-4">
+                    Teachers mark attendance for their assigned classes and use
+                    the companion app’s gate attendance tools.
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >fact_check</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >Classroom attendance</strong
+                        ><span class="small text-secondary"
+                          >Record attendance for students in a class
+                          roster.</span
+                        ></span
+                      >
+                    </li>
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >qr_code_scanner</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >Gate check-in and check-out</strong
+                        ><span class="small text-secondary"
+                          >Use the app’s QR-based gate attendance flow.</span
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </article>
+
+                <article
+                  id="step-03"
+                  class="feature-step"
+                  data-feature-step="student"
+                >
+                  <p
+                    class="feature-step-label small fw-semibold text-uppercase text-primary mb-3"
+                  >
+                    03 · Student platform
+                  </p>
+                  <h3 class="feature-step-title fw-semibold">
+                    Structured access to current-term learning.
+                  </h3>
+                  <p class="feature-step-description fs-6 mb-4">
+                    Students use the companion app to find current-term
+                    subjects, weekly topics and lesson content shared by their
+                    school.
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-0">
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >hub</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >Subjects and weekly topics</strong
+                        ><span class="small text-secondary"
+                          >See learning topics organised for the current
+                          term.</span
+                        ></span
+                      >
+                    </li>
+                    <li
+                      class="feature-walkthrough-point d-flex align-items-start gap-3 p-3 border rounded-3 bg-white"
+                    >
+                      <span
+                        class="material-symbols-outlined d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary p-2"
+                        aria-hidden="true"
+                        >description</span
+                      >
+                      <span
+                        ><strong class="d-block fw-semibold"
+                          >Lesson content</strong
+                        ><span class="small text-secondary"
+                          >Open lesson materials made available by the
+                          school.</span
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </article>
+              </div>
+
+              <figure
+                class="feature-sticky-visual position-sticky align-self-start m-0"
+              >
+                <div
+                  class="feature-visual-canvas position-relative z-1 overflow-hidden"
+                >
+                  <div
+                    class="feature-visual-scene position-absolute d-flex align-items-center justify-content-center overflow-hidden is-active"
+                    data-feature-scene="admin"
+                    aria-hidden="false"
+                  >
+                    <img
+                      class="d-block w-100 h-100 object-fit-contain"
+                      src="assets/schoolbridge-admin-portal-preview.svg"
+                      alt="SchoolBridge school administration portal preview"
+                    />
+                  </div>
+                  <div
+                    class="feature-visual-scene position-absolute d-flex align-items-center justify-content-center overflow-hidden"
+                    data-feature-scene="teacher"
+                    aria-hidden="true"
+                  >
+                    <img
+                      class="d-block w-100 h-100 object-fit-contain"
+                      src="assets/schoolbridge-attendance-app-preview.svg"
+                      alt="SchoolBridge classroom and gate attendance app preview"
+                    />
+                  </div>
+                  <div
+                    class="feature-visual-scene position-absolute d-flex align-items-center justify-content-center overflow-hidden"
+                    data-feature-scene="student"
+                    aria-hidden="true"
+                  >
+                    <img
+                      class="d-block w-100 h-100 object-fit-contain"
+                      src="assets/schoolbridge-student-app-preview.svg"
+                      alt="SchoolBridge student companion app preview"
+                    />
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <!-- School day -->
+        <section
+          class="school-day-section"
+          aria-labelledby="school-day-heading"
+        >
+          <div class="container-xxl">
+            <div class="school-day-heading row align-items-end g-4">
+              <div class="school-day-heading-copy col-12 col-lg-7">
+                <span class="eyebrow eyebrow-muted fw-bold"
+                  >MADE FOR SCHOOL ROUTINES</span
+                >
+                <h2 id="school-day-heading" class="fw-semibold">
+                  Built around the way a school day works.
+                </h2>
+              </div>
+              <p class="school-day-heading-description col-12 col-lg-5 mb-0">
+                Schools have their own routines, from planning lessons to taking
+                attendance. SchoolBridge brings the tools for those jobs
+                together in one school management platform.
+              </p>
+            </div>
+            <div
+              class="school-day-grid row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3"
+              tabindex="0"
+              role="region"
+              aria-label="School day highlights"
+            >
+              <article class="col">
+                <div class="school-day-card h-100">
+                  <span
+                    class="school-day-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3"
+                    aria-hidden="true"
+                    >hub</span
+                  >
+                  <h3 class="mb-2 fw-semibold">
+                    Learning and attendance, together
+                  </h3>
+                  <p class="m-0">
+                    Keep academic planning, class information and attendance
+                    tools within the same school workspace.
+                  </p>
+                </div>
+              </article>
+              <article class="col">
+                <div class="school-day-card h-100">
+                  <span
+                    class="school-day-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3"
+                    aria-hidden="true"
+                    >devices</span
+                  >
+                  <h3 class="mb-2 fw-semibold">
+                    Web, mobile and desktop access
+                  </h3>
+                  <p class="m-0">
+                    Administrators use the web portal. Students and teachers can
+                    use the companion apps on mobile or Windows.
+                  </p>
+                </div>
+              </article>
+              <article class="col">
+                <div class="school-day-card h-100">
+                  <span
+                    class="school-day-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3"
+                    aria-hidden="true"
+                    >admin_panel_settings</span
+                  >
+                  <h3 class="mb-2 fw-semibold">Tools for each school role</h3>
+                  <p class="m-0">
+                    Student, teacher and administrator experiences focus on the
+                    information and tasks for each role.
+                  </p>
+                </div>
+              </article>
+              <article class="col">
+                <div class="school-day-card h-100">
+                  <span
+                    class="school-day-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3"
+                    aria-hidden="true"
+                    >event_available</span
+                  >
+                  <h3 class="mb-2 fw-semibold">
+                    Mark attendance at the gate and in class
+                  </h3>
+                  <p class="m-0">
+                    Use the companion app for student and staff gate
+                    check-in/check-out and classroom attendance. Administrators
+                    can review attendance records in the portal.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div
+              class="school-day-indicators d-flex justify-content-center align-items-center gap-2 mt-3 d-xl-none"
+              aria-label="School day card pages"
+            ></div>
+          </div>
+        </section>
+        <!-- How it works -->
+        <section class="workflow-section" id="getting-started">
+          <div class="container-xxl">
+            <div class="section-heading text-center mx-auto mb-5">
+              <span class="eyebrow eyebrow-muted fw-bold">HOW IT WORKS</span>
+              <h2 class="fw-semibold">
+                Start with your school. Build from there.
+              </h2>
+              <p class="m-0 mx-auto">
+                Register, set up your school workspace, then use the tools that
+                fit your team.
+              </p>
+            </div>
+            <div
+              class="workflow-track row row-cols-1 row-cols-md-3 g-4 position-relative"
+            >
+              <article
+                class="workflow-step col text-md-center position-relative z-1"
+              >
+                <span class="workflow-index position-absolute top-0 fw-bold"
+                  >01</span
+                ><span
+                  class="workflow-icon d-flex align-items-center justify-content-center rounded-circle bg-white mx-md-auto mb-md-3 position-relative z-1"
+                  ><span class="material-symbols-outlined"
+                    >app_registration</span
+                  ></span
+                >
+                <div class="workflow-step-content position-relative z-1">
+                  <h3 class="mb-2 fw-semibold">Register your school</h3>
+                  <p class="m-0 mx-auto">
+                    Enter your school details and administrator information.
+                  </p>
+                </div>
+              </article>
+              <article
+                class="workflow-step col text-md-center position-relative z-1"
+              >
+                <span class="workflow-index position-absolute top-0 fw-bold"
+                  >02</span
+                ><span
+                  class="workflow-icon d-flex align-items-center justify-content-center rounded-circle bg-white mx-md-auto mb-md-3 position-relative z-1"
+                  ><span class="material-symbols-outlined"
+                    >account_tree</span
+                  ></span
+                >
+                <div class="workflow-step-content position-relative z-1">
+                  <h3 class="mb-2 fw-semibold">Set up your workspace</h3>
+                  <p class="m-0 mx-auto">
+                    Add the academic year, classes, subjects and school records.
+                  </p>
+                </div>
+              </article>
+              <article
+                class="workflow-step col text-md-center position-relative z-1"
+              >
+                <span class="workflow-index position-absolute top-0 fw-bold"
+                  >03</span
+                ><span
+                  class="workflow-icon d-flex align-items-center justify-content-center rounded-circle bg-white mx-md-auto mb-md-3 position-relative z-1"
+                  ><span class="material-symbols-outlined">devices</span></span
+                >
+                <div class="workflow-step-content position-relative z-1">
+                  <h3 class="mb-2 fw-semibold">Use the platform</h3>
+                  <p class="m-0 mx-auto">
+                    Manage school work on the web and download companion apps
+                    from the portal.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section" id="pricing">
+          <div class="container-xxl">
+            <div class="section-heading text-center mx-auto mb-5">
+              <span class="eyebrow eyebrow-muted fw-bold"
+                >PLANS FOR DIFFERENT SCHOOL SIZES</span
+              >
+              <h2 class="fw-semibold">Choose a plan that fits your school.</h2>
+              <p class="m-0 mx-auto">
+                Compare student limits and included features. Basic is free;
+                paid plan prices are per term.
+              </p>
+            </div>
+            <div
+              class="pricing-cards row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3"
+            >
+              <div class="col">
+                <article
+                  class="pricing-card d-flex flex-column h-100 w-100 position-relative"
+                >
+                  <div
+                    class="pricing-card-head d-flex align-items-center gap-2"
+                  >
+                    <span
+                      class="pricing-plan-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary"
+                      >school</span
+                    ><span class="pricing-plan-name fw-semibold">Basic</span>
+                  </div>
+                  <p class="pricing-description mb-3">
+                    For small emerging schools.
+                  </p>
+                  <div class="pricing-price fw-bold text-nowrap">Free</div>
+                  <p class="pricing-capacity mb-3 pb-2 border-bottom">
+                    Up to <strong class="fw-semibold">150 students</strong>
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-4">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Standard reporting
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Email support
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-outline-primary pricing-action mt-auto d-flex align-items-center justify-content-center gap-2 fw-semibold"
+                    href="https://localhost:7261/register-school"
+                    >Get started
+                    <span class="material-symbols-outlined fs-6"
+                      >arrow_forward</span
+                    ></a
+                  >
+                </article>
+              </div>
+              <div class="col">
+                <article
+                  class="pricing-card pricing-card-featured d-flex flex-column h-100 w-100 position-relative"
+                >
+                  <span
+                    class="pricing-recommended position-absolute top-0 end-0 translate-middle-y badge text-bg-primary"
+                    >RECOMMENDED</span
+                  >
+                  <div
+                    class="pricing-card-head d-flex align-items-center gap-2"
+                  >
+                    <span
+                      class="pricing-plan-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary"
+                      >trending_up</span
+                    ><span class="pricing-plan-name fw-semibold">Pro</span>
+                  </div>
+                  <p class="pricing-description mb-3">
+                    For growing standard schools.
+                  </p>
+                  <div class="pricing-price fw-bold text-nowrap">
+                    ₦300,000<span class="fw-medium">/ term</span>
+                  </div>
+                  <p class="pricing-capacity mb-3 pb-2 border-bottom">
+                    Up to <strong class="fw-semibold">300 students</strong>
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-4">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Advanced reporting and analytics
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Priority email and chat support
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Advanced access control
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-primary pricing-action mt-auto d-flex align-items-center justify-content-center gap-2 fw-semibold"
+                    href="https://localhost:7261/register-school"
+                    >Get started
+                    <span class="material-symbols-outlined fs-6"
+                      >arrow_forward</span
+                    ></a
+                  >
+                </article>
+              </div>
+              <div class="col">
+                <article
+                  class="pricing-card d-flex flex-column h-100 w-100 position-relative"
+                >
+                  <div
+                    class="pricing-card-head d-flex align-items-center gap-2"
+                  >
+                    <span
+                      class="pricing-plan-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary"
+                      >domain</span
+                    ><span class="pricing-plan-name fw-semibold">Premium</span>
+                  </div>
+                  <p class="pricing-description mb-3">
+                    For large established schools.
+                  </p>
+                  <div class="pricing-price fw-bold text-nowrap">
+                    ₦700,000<span class="fw-medium">/ term</span>
+                  </div>
+                  <p class="pricing-capacity mb-3 pb-2 border-bottom">
+                    Up to <strong class="fw-semibold">600 students</strong>
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-4">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Advanced reporting and analytics
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Priority email and chat support
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Advanced access control
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Custom domains
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-outline-primary pricing-action mt-auto d-flex align-items-center justify-content-center gap-2 fw-semibold"
+                    href="https://localhost:7261/register-school"
+                    >Get started
+                    <span class="material-symbols-outlined fs-6"
+                      >arrow_forward</span
+                    ></a
+                  >
+                </article>
+              </div>
+              <div class="col">
+                <article
+                  class="pricing-card pricing-card-enterprise d-flex flex-column h-100 w-100 position-relative"
+                >
+                  <div
+                    class="pricing-card-head d-flex align-items-center gap-2"
+                  >
+                    <span
+                      class="pricing-plan-icon material-symbols-outlined d-flex align-items-center justify-content-center rounded-3 bg-primary-subtle text-primary"
+                      >apartment</span
+                    ><span class="pricing-plan-name fw-semibold"
+                      >Enterprise</span
+                    >
+                  </div>
+                  <p class="pricing-description mb-3">
+                    For large and multi-campus schools.
+                  </p>
+                  <div class="pricing-price fw-bold text-nowrap">
+                    ₦1,000,000<span class="fw-medium">/ term</span>
+                  </div>
+                  <p class="pricing-capacity mb-3 pb-2 border-bottom">
+                    <strong class="fw-semibold">Unlimited students</strong>
+                  </p>
+                  <ul class="list-unstyled d-grid gap-2 mb-4">
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Multi-campus management
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Dedicated account manager
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Custom domains and white-labeling
+                    </li>
+                    <li class="d-flex align-items-start gap-2">
+                      <span class="material-symbols-outlined pricing-check"
+                        >check</span
+                      >Custom API integrations
+                    </li>
+                  </ul>
+                  <a
+                    class="btn btn-light pricing-action mt-auto d-flex align-items-center justify-content-center gap-2 fw-semibold"
+                    href="https://localhost:7261/register-school"
+                    >Get started
+                    <span class="material-symbols-outlined fs-6"
+                      >arrow_forward</span
+                    ></a
+                  >
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section container-xxl" id="faq">
+          <div class="faq-layout row g-4 g-lg-5">
+            <div class="faq-intro col-12 col-lg-4">
+              <span class="eyebrow eyebrow-muted fw-bold">GOOD TO KNOW</span>
+              <h2 class="fw-semibold">Questions schools often ask.</h2>
+              <p class="faq-intro-copy mb-4">
+                Clear answers about the portal, apps and school plans.
+              </p>
+              <a
+                class="faq-register-link d-inline-flex align-items-center gap-2 fw-semibold text-decoration-none"
+                href="https://localhost:7261/register-school"
+              >
+                Register your school
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <div class="faq-list col-12 col-lg-8">
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  Which schools can use SchoolBridge?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  SchoolBridge is designed for schools that want one place to
+                  manage school records, academics and daily operations. The
+                  plans offer different student limits, from 150 students on
+                  Basic to unlimited on Enterprise.
+                </p>
+              </details>
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  What can I manage in the web portal?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Manage student and staff records, parents and guardians,
+                  classes, subjects, lesson topics, results, attendance, events,
+                  timetables, subscriptions, fees and finance.
+                </p>
+              </details>
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  Are there mobile and desktop apps?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Yes. The platform includes an Android mobile app and a Windows
+                  desktop app alongside the school admin web portal.
+                </p>
+              </details>
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  Where do I download the apps?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  After signing in, school administrators can find the companion
+                  apps in App Versions in the portal.
+                </p>
+              </details>
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  How does pricing work?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Basic is free. Pro, Premium and Enterprise are priced per
+                  term, with different student limits and plan features.
+                </p>
+              </details>
+              <details>
+                <summary
+                  class="d-flex align-items-center justify-content-between gap-3 fw-semibold"
+                >
+                  How do I get started?<span
+                    class="faq-toggle material-symbols-outlined flex-shrink-0"
+                    aria-hidden="true"
+                    >add</span
+                  >
+                </summary>
+                <p>
+                  Register your school and administrator details, then use your
+                  school workspace to set up classes, subjects and records.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Closing call to action -->
+        <section
+          class="closing-section container-xxl"
+          aria-labelledby="closing-heading"
+        >
+          <div
+            class="closing-banner position-relative d-flex align-items-center overflow-hidden"
+          >
+            <svg
+              class="closing-rings position-absolute z-1 pe-none"
+              aria-hidden="true"
+              fill="none"
+              viewBox="0 0 600 600"
+            >
+              <circle
+                cx="300"
+                cy="300"
+                r="280"
+                stroke="white"
+                stroke-dasharray="12 12"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="300"
+                cy="300"
+                r="200"
+                stroke="white"
+                stroke-width="1"
+              />
+              <circle
+                cx="300"
+                cy="300"
+                r="120"
+                stroke="white"
+                stroke-width="2"
+              />
+            </svg>
+            <div
+              class="closing-glow position-absolute z-0 rounded-circle"
+              aria-hidden="true"
+            ></div>
+            <div
+              class="closing-content position-relative z-2 d-flex flex-column gap-4"
+            >
+              <h2 id="closing-heading" class="fw-semibold m-0">
+                Let’s make every school day easier to see.
+              </h2>
+              <p class="m-0">
+                Connect classrooms, staff and school operations in one place.
+                Register your school to get started, or explore the plans
+                available for your team.
+              </p>
+              <div
+                class="closing-actions d-flex flex-wrap align-items-center gap-3"
+              >
+                <a
+                  class="btn btn-light d-inline-flex align-items-center gap-2 fw-semibold"
+                  href="https://localhost:7261/register-school"
+                >
+                  Register your school
+                  <span class="material-symbols-outlined" aria-hidden="true"
+                    >arrow_forward</span
+                  >
+                </a>
+                <a
+                  class="btn btn-outline-light d-inline-flex align-items-center fw-semibold"
+                  href="#pricing"
+                  >Explore plans</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="public-footer">
+        <div class="footer-inner container-xxl">
+          <div class="footer-main d-grid align-items-center">
+            <a
+              class="footer-brand d-inline-flex align-items-center fw-bold text-decoration-none"
+              href="#hero"
+              aria-label="SchoolBridge home"
+            >
+              <span
+                class="brand-mark material-symbols-outlined d-inline-flex align-items-center justify-content-center rounded-3 bg-primary text-white shadow-sm"
+                aria-hidden="true"
+                >school</span
+              >
+              <span
+                >SchoolBridge
+                <small class="d-block fw-semibold"
+                  >SCHOOL MANAGEMENT</small
+                ></span
+              >
+            </a>
+            <p class="m-0">
+              School management tools for schools of different sizes.
+            </p>
+            <nav
+              class="footer-links d-flex flex-wrap"
+              aria-label="Footer navigation"
+            >
+              <a class="fw-medium text-decoration-none" href="#platform"
+                >Platform</a
+              >
+              <a class="fw-medium text-decoration-none" href="#features"
+                >Features</a
+              >
+              <a class="fw-medium text-decoration-none" href="#getting-started"
+                >How it works</a
+              >
+              <a class="fw-medium text-decoration-none" href="#pricing"
+                >Pricing</a
+              >
+              <a class="fw-medium text-decoration-none" href="#faq">FAQ</a>
+              <a
+                class="fw-medium text-decoration-none"
+                href="https://localhost:7261/register-school"
+                >Register school</a
+              >
+              <a
+                class="fw-medium text-decoration-none"
+                href="https://localhost:7261/login"
+                >Sign in</a
+              >
+            </nav>
+          </div>
+          <div class="footer-bottom d-flex justify-content-between">
+            <span>© 2026 SchoolBridge. All rights reserved.</span>
+            <span>Web portal · Android · Windows</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      (() => {
+        const header = document.querySelector(".public-header");
+        if (!header) return;
+        const updateHeaderHeight = () => {
+          document.documentElement.style.setProperty(
+            "--landing-header-height",
+            `${header.getBoundingClientRect().height}px`,
+          );
+        };
+        updateHeaderHeight();
+        new ResizeObserver(updateHeaderHeight).observe(header);
+      })();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/aos.js"></script>
+    <script src="landing.js?v=20261106-schoolday-scroll-indicators"></script>
+  </body>
+</html>

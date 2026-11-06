@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">SchoolBridge school admin portal</title>
+  <desc id="desc">A generic school administration dashboard showing student, subscription, subject and session summaries, quick actions, attendance and upcoming events.</desc>
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3156d8"/><stop offset="1" stop-color="#183aa8"/></linearGradient>
+    <linearGradient id="attendance" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3568ee"/><stop offset="1" stop-color="#6d8df3"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#263d74" flood-opacity=".07"/></filter>
+    <style>
+      .ui{font-family:Inter,Arial,sans-serif;fill:#19253a}.muted{fill:#77869e}.tiny{font-size:12px}.small{font-size:15px}.label{font-size:14px;font-weight:600;letter-spacing:.04em}.value{font-size:30px;font-weight:750}.card{fill:#fff;stroke:#e3e9f3;stroke-width:1.5}.nav{font-size:16px;font-weight:550;fill:#53647e}.navactive{font-size:16px;font-weight:650;fill:#2454d8}
+    </style>
+  </defs>
+  <rect width="1440" height="900" fill="#f7f8fc"/>
+  <rect width="258" height="900" fill="#fff"/>
+  <path d="M258 0v900" stroke="#e5eaf2" stroke-width="2"/>
+  <g class="ui">
+    <rect x="28" y="25" width="42" height="42" rx="13" fill="url(#brand)"/>
+    <path d="M38 42l11-7 11 7-11 7-11-7zm4 4v8l7 4 7-4v-8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="44" font-size="20" font-weight="750">SchoolBridge</text>
+    <text x="82" y="61" font-size="10" font-weight="700" letter-spacing="1.5" fill="#8291a9">SCHOOL MANAGEMENT</text>
+  </g>
+  <g>
+    <rect x="16" y="103" width="226" height="48" rx="10" fill="#edf2ff"/>
+    <g fill="none" stroke="#2859df" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="34" y="118" width="17" height="15" rx="2"/><path d="M39 114h17v15"/></g>
+    <text class="navactive" x="65" y="134">Dashboard</text>
+    <g class="nav">
+      <g transform="translate(34 177)" fill="none" stroke="#71819a" stroke-width="2" stroke-linecap="round"><path d="M2 4h18v16H2zM6 1h18v16"/></g><text x="65" y="195">Subjects</text>
+      <g transform="translate(34 231)" fill="none" stroke="#71819a" stroke-width="2" stroke-linejoin="round"><path d="M4 1h12l5 5v17H4zM16 1v6h5M8 12h9M8 16h9"/></g><text x="65" y="249">Library</text>
+      <g transform="translate(34 285)" fill="none" stroke="#71819a" stroke-width="2" stroke-linecap="round"><path d="M3 3h17v18H3zM7 8h9M7 13h9M7 18h5"/></g><text x="65" y="303">Enter Results</text>
+      <g transform="translate(34 339)" fill="none" stroke="#71819a" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 3v18M16 3v18"/></g><text x="65" y="357">Classes</text>
+      <g transform="translate(34 393)" fill="none" stroke="#71819a" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M2 22c1-6 15-6 16 0M19 6a4 4 0 010 7m1 3c3 1 4 3 4 6"/></g><text x="65" y="411">Students</text>
+      <g transform="translate(34 447)" fill="none" stroke="#71819a" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="7" r="4"/><path d="M3 22c1-6 15-6 16 0"/></g><text x="65" y="465">Teachers</text>
+      <g transform="translate(34 501)" fill="none" stroke="#71819a" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 1v6M16 1v6M3 10h18"/></g><text x="65" y="519">School Events</text>
+      <g transform="translate(34 555)" fill="none" stroke="#71819a" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 1v6M16 1v6M3 10h18M8 14h3M14 14h3"/></g><text x="65" y="573">Timetable</text>
+    </g>
+    <text class="ui tiny" x="34" y="632" fill="#8794a8" font-weight="700" letter-spacing="1">ADMINISTRATION</text>
+    <g transform="translate(34 653)" fill="none" stroke="#71819a" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M11 6v6l4 2"/></g><text class="nav" x="65" y="674">Attendance</text>
+  </g>
+  <rect x="258" y="0" width="1182" height="72" fill="#fff"/>
+  <path d="M258 72h1182" stroke="#e5eaf2" stroke-width="2"/>
+  <g class="ui"><circle cx="1328" cy="36" r="17" fill="#f0f4ff"/><path d="M1321 36h14m-7-7v14" stroke="#3156d8" stroke-width="2" stroke-linecap="round"/><circle cx="1381" cy="36" r="17" fill="#f5f7fb"/><path d="M1374 37a7 7 0 0114 0c0 7 3 8 3 8h-20s3-1 3-8m5 12h4" fill="none" stroke="#6b7b94" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g class="ui">
+    <text x="298" y="132" font-size="28" font-weight="750">School overview</text>
+    <text x="298" y="160" class="small muted">Your school records and activity at a glance.</text>
+    <rect x="1197" y="103" width="207" height="43" rx="9" fill="#fff" stroke="#e0e7f1"/><path d="M1215 116h15v16h-15zM1219 112v7m7-7v7" fill="none" stroke="#3156d8" stroke-width="1.8" stroke-linecap="round"/><text x="1240" y="130" font-size="14" font-weight="650">2026 / 2027</text><text x="1345" y="130" class="tiny muted">First Term</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="card" x="298" y="187" width="258" height="139" rx="13"/><rect x="506" y="204" width="34" height="34" rx="10" fill="#edf2ff"/><path d="M515 214h16v12h-16zM518 211h10" fill="none" stroke="#3156d8" stroke-width="1.7" stroke-linecap="round"/>
+    <rect class="card" x="576" y="187" width="258" height="139" rx="13"/><rect x="784" y="204" width="34" height="34" rx="10" fill="#f3edff"/><path d="M792 216a9 9 0 0117 0v8h-17zM797 227h7" fill="none" stroke="#8b55d6" stroke-width="1.7" stroke-linecap="round"/>
+    <rect class="card" x="854" y="187" width="258" height="139" rx="13"/><rect x="1062" y="204" width="34" height="34" rx="10" fill="#fff6df"/><path d="M1070 211h17v16h-17zM1074 215h9m-9 4h9m-9 4h6" fill="none" stroke="#d39b20" stroke-width="1.7" stroke-linecap="round"/>
+    <rect class="card" x="1132" y="187" width="272" height="139" rx="13"/><rect x="1354" y="204" width="34" height="34" rx="10" fill="#e6f8f9"/><path d="M1363 211h16v17h-16zM1367 208v6m8-6v6m-12 0h24" fill="none" stroke="#21a6ad" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+  <g class="ui">
+    <text x="321" y="225" class="label muted">TOTAL STUDENTS</text><text x="321" y="274" class="value">211</text><text x="321" y="303" class="tiny" fill="#3c9c6c">+12% this term</text>
+    <text x="599" y="225" class="label muted">ACTIVE SUBSCRIPTION</text><text x="599" y="274" class="value">85%</text><text x="599" y="303" class="tiny muted">1,058 of 1,245 used</text>
+    <text x="877" y="225" class="label muted">TOTAL SUBJECTS</text><text x="877" y="274" class="value">138</text><text x="877" y="303" class="tiny muted">Across all levels</text>
+    <text x="1155" y="225" class="label muted">CURRENT SESSION</text><text x="1155" y="268" font-size="22" font-weight="750">2026 / 2027</text><text x="1155" y="302" class="tiny" fill="#21a6ad">First Term</text>
+    <text x="298" y="376" font-size="21" font-weight="700">Quick actions</text>
+  </g>
+  <g filter="url(#shadow)" class="ui">
+    <rect class="card" x="298" y="395" width="258" height="101" rx="12"/><rect x="317" y="416" width="36" height="36" rx="10" fill="#edf2ff"/><path d="M326 426h17v14h-17zM331 422h7m-4 11h1" fill="none" stroke="#3156d8" stroke-width="1.7" stroke-linecap="round"/><text x="367" y="435" font-size="16" font-weight="700">Add student</text><text x="367" y="460" class="tiny muted">Enroll a student</text>
+    <rect class="card" x="576" y="395" width="258" height="101" rx="12"/><rect x="595" y="416" width="36" height="36" rx="10" fill="#f3edff"/><path d="M603 424h20v16h-20zM608 421v6m10-6v6m-15 2h20" fill="none" stroke="#8b55d6" stroke-width="1.7" stroke-linecap="round"/><text x="645" y="435" font-size="16" font-weight="700">Subscriptions</text><text x="645" y="460" class="tiny muted">Manage school access</text>
+    <rect class="card" x="854" y="395" width="258" height="101" rx="12"/><rect x="873" y="416" width="36" height="36" rx="10" fill="#fff6df"/><path d="M881 425h20v15h-20zM885 429h12m-12 4h12m-12 4h7" fill="none" stroke="#d39b20" stroke-width="1.7" stroke-linecap="round"/><text x="923" y="435" font-size="16" font-weight="700">Update fees</text><text x="923" y="460" class="tiny muted">Adjust fee structures</text>
+    <rect class="card" x="1132" y="395" width="272" height="101" rx="12"/><rect x="1151" y="416" width="36" height="36" rx="10" fill="#e6f8f9"/><path d="M1159 425h20v16h-20zM1164 421v8m10-8v8m-15 0h20" fill="none" stroke="#21a6ad" stroke-width="1.7" stroke-linecap="round"/><text x="1201" y="435" font-size="16" font-weight="700">Create session</text><text x="1201" y="460" class="tiny muted">Start an academic year</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect class="card" x="298" y="523" width="520" height="283" rx="13"/><rect class="card" x="838" y="523" width="566" height="283" rx="13"/>
+  </g>
+  <g class="ui">
+    <text x="322" y="562" font-size="19" font-weight="700">Today’s attendance</text><text x="322" y="585" class="tiny muted">Students recorded in today’s roll call</text>
+    <circle cx="440" cy="690" r="67" fill="none" stroke="#e7edf7" stroke-width="15"/><circle cx="440" cy="690" r="67" fill="none" stroke="url(#attendance)" stroke-width="15" stroke-linecap="round" stroke-dasharray="366 421" transform="rotate(-90 440 690)"/><text x="440" y="687" text-anchor="middle" font-size="29" font-weight="750">87%</text><text x="440" y="711" text-anchor="middle" class="tiny muted">present</text>
+    <text x="551" y="665" class="label muted">ATTENDANCE RATE</text><text x="551" y="699" font-size="23" font-weight="700">1,082 <tspan font-size="14" font-weight="500" fill="#77869e">of 1,245</tspan></text><rect x="551" y="723" width="220" height="8" rx="4" fill="#e7edf7"/><rect x="551" y="723" width="191" height="8" rx="4" fill="url(#attendance)"/>
+    <text x="862" y="562" font-size="19" font-weight="700">Upcoming events</text><text x="862" y="585" class="tiny muted">Keep school dates in view</text>
+    <rect x="862" y="611" width="45" height="49" rx="9" fill="#edf2ff"/><text x="884" y="632" text-anchor="middle" class="tiny" fill="#3156d8" font-weight="700">29</text><text x="884" y="649" text-anchor="middle" font-size="10" fill="#71819a">OCT</text><text x="925" y="630" font-size="15" font-weight="650">Open Day</text><text x="925" y="651" class="tiny muted">Academic · 9:30 AM</text><path d="M862 676h516" stroke="#edf0f5" stroke-width="1.5"/>
+    <rect x="862" y="698" width="45" height="49" rx="9" fill="#e9f7ee"/><text x="884" y="719" text-anchor="middle" class="tiny" fill="#31915b" font-weight="700">02</text><text x="884" y="736" text-anchor="middle" font-size="10" fill="#71819a">NOV</text><text x="925" y="717" font-size="15" font-weight="650">Mid-term break</text><text x="925" y="738" class="tiny muted">School holiday · All day</text>
+  </g>
+  <rect x="258" y="872" width="1182" height="28" fill="#f1f4fa"/>
+</svg>
