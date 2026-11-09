@@ -44,6 +44,8 @@ async function initializeLandingAnimations() {
     };
 
     // Apply AOS only after the CDN is available so a CDN failure never hides page content.
+    animateFromSide(root.querySelector(".hero-copy"), "fade-left");
+    animateFromSide(root.querySelector(".hero-visual"), "fade-down", 120);
     animate(".platform-section .section-heading, .feature-heading, .workflow-section .section-heading, .pricing-section .section-heading", "fade-up");
     animate(".surface-role-card", "fade-up", [0, 100, 200]);
     animateFromSide(root.querySelector(".school-day-heading-copy"), "fade-right");
