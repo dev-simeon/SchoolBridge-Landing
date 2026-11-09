@@ -122,8 +122,13 @@ body {
   border-radius: 15px;
   color: #193267;
   background: linear-gradient(145deg, #fff, #f3f6ff);
-  box-shadow: 0 5px 15px rgba(20, 42, 91, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:
+    0 5px 15px rgba(20, 42, 91, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .navbar-toggler:hover {
   border-color: #bdccef;
@@ -149,7 +154,13 @@ body {
   border: 0;
   border-left: 1px solid rgba(217, 226, 243, 0.8);
   color: #142542;
-  background: radial-gradient(ellipse at 100% 0%, rgba(224, 233, 255, 0.85), transparent 40%), #fff;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(224, 233, 255, 0.85),
+      transparent 40%
+    ),
+    #fff;
   box-shadow: -22px 0 70px rgba(13, 30, 65, 0.2);
 }
 .mobile-nav-drawer .offcanvas-header {
@@ -184,7 +195,10 @@ body {
   min-height: 60px;
   border: 1px solid transparent;
   color: #233653;
-  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease;
 }
 .mobile-nav-links .nav-link:hover,
 .mobile-nav-links .nav-link[aria-current="location"] {
@@ -788,7 +802,10 @@ body {
   border: 0;
   border-radius: 50%;
   background: #bdc9dc;
-  transition: width 0.2s ease, border-radius 0.2s ease, background-color 0.2s ease;
+  transition:
+    width 0.2s ease,
+    border-radius 0.2s ease,
+    background-color 0.2s ease;
 }
 .school-day-indicator[aria-pressed="true"] {
   width: 24px;
@@ -1483,9 +1500,6 @@ body {
   .hero-section {
     padding-bottom: 128px;
   }
-  .hero-grid {
-    row-gap: 8px !important;
-  }
   .hero-actions .button {
     width: 100%;
   }
@@ -1502,11 +1516,13 @@ body {
     aspect-ratio: 1.5;
   }
   .hero-phone-preview {
-    width: 32%;
+    width: 24%;
   }
   .hero-browser-preview {
     top: 8%;
-    width: 94%;
+    right: 2.5% !important;
+    left: 2.5% !important;
+    width: 95%;
   }
   .hero-desktop-preview {
     width: 54%;
