@@ -599,25 +599,28 @@ body {
   .hero-section {
     padding-bottom: 128px;
   }
+  .hero-grid {
+    row-gap: 8px !important;
+  }
   .hero-actions .button {
     width: 100%;
   }
   .hero-visual {
-    min-height: 340px;
+    min-height: 300px;
   }
   .hero-composition {
     width: 100%;
     aspect-ratio: 1.5;
   }
   .hero-phone-preview {
-    width: 29%;
+    width: 32%;
   }
   .hero-browser-preview {
     top: 8%;
-    width: 82%;
+    width: 94%;
   }
   .hero-desktop-preview {
-    width: 48%;
+    width: 54%;
   }
 }
 @media (max-width: 470px) {
@@ -841,6 +844,11 @@ body {
   }
   .school-day-icon {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .school-day-section {
+    padding: 50px 0 60px;
   }
 }
 /* Features */
@@ -1269,6 +1277,11 @@ body {
   }
   .pricing-price {
     font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .pricing-section {
+    padding: 68px 0 100px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
