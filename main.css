@@ -1177,12 +1177,6 @@ body {
   font-size: 8px;
 }
 
-
-
-
-
-
-
 /* Responsive overrides: widest to narrowest */
 @media (min-width: 1280px) {
   .feature-sticky-layout {
@@ -1341,10 +1335,14 @@ body {
     width: 75%;
   }
   .workflow-index {
+    position: static !important;
+    top: auto !important;
     right: auto;
-    left: 57px;
-    z-index: 2;
+    left: auto;
+    z-index: auto;
     color: #71809a;
+    font-size: 1rem;
+    letter-spacing: normal;
   }
   .workflow-step::after {
     content: "";
@@ -1365,9 +1363,15 @@ body {
     grid-row: 1;
     justify-self: center;
   }
-  .workflow-step-content {
+  .workflow-step-copy {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .workflow-step-content {
+    min-width: 0;
   }
   .workflow-step p {
     max-width: none;
